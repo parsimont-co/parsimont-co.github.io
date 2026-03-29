@@ -46,11 +46,10 @@ body {
     align-items: center;
 }
 
-.logo {
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-size: 1.25rem;
+.logo img {
+    height: 40px;
+    width: auto;
+    display: block;
 }
 
 .nav-links {
@@ -84,13 +83,19 @@ body {
     align-items: center;
 }
 
-h1 {
-    font-size: clamp(3rem, 15vw, 8rem);
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    line-height: 1;
+.hero-logo-container {
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-logo {
+    max-width: 800px;
+    width: 80%;
+    height: auto;
+    display: block;
 }
 
 .tagline {
