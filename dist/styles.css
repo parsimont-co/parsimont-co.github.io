@@ -111,22 +111,37 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem 0;
+    padding: 6rem 2rem;
+    background-color: #fff;
+}
+
+.about-content {
+    max-width: 850px;
+    text-align: center;
 }
 
 .about h2 {
     font-size: clamp(1.5rem, 3vw, 2.5rem);
     text-transform: uppercase;
-    letter-spacing: 0.2em;
-    margin-bottom: 2rem;
+    letter-spacing: 0.3em;
+    margin-bottom: 4rem;
+    position: relative;
 }
 
 .about p {
-    font-size: clamp(1.1rem, 2.5vw, 1.75rem);
-    max-width: 800px;
-    margin: 0 auto;
-    font-style: italic;
-    color: #444;
+    font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 2.5rem;
+}
+
+.capabilities {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-top: 4rem;
+    color: var(--text-color);
+    font-size: 0.9rem !important;
 }
 
 /* Base Responsive adjustments */
