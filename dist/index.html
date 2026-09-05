@@ -4,38 +4,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parsimont | Premium Digital Solutions</title>
+    <title>Parsimont Pte Ltd | Technical Venture Partner</title>
     <meta name="description"
-        content="Custom software agency specializing in building your vision. We bring premium designs and technical excellence to your projects.">
+        content="Parsimont is a Singapore-based technical venture partner building high-performance, low-overhead technology infrastructure for high-growth businesses.">
+    <link rel="preload" href="res/logo.svg" as="image">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
     <header class="main-header">
         <nav>
-            <div class="logo"><img src="res/logo.svg" alt="PARSIMONT"></div>
+            <div class="logo"><img src="res/logo.svg" alt="PARSIMONT" width="150" height="30"></div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#people">People</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container">
+    <main>
         <section id="home" class="hero">
-            <h1 class="hero-logo-container"><img src="res/logo.svg" alt="PARSIMONT" class="hero-logo"></h1>
-            <p class="tagline">"We build software for you because we care"</p>
+            <canvas class="hero-graph" aria-hidden="true"></canvas>
+            <p class="eyebrow">Technical Venture Partner</p>
+            <h1 class="tagline">Build it here.</h1>
+            <a href="#about" class="cta">Explore our work</a>
         </section>
-        <section id="about" class="about">
-            <h2>About Us</h2>
+
+        <section id="about" class="about reveal">
+            <span class="section-tag">01 / About</span>
+            <h2>Engineering the infrastructure behind your growth</h2>
             <div class="about-content">
-                <p>Parsimont is a technical venture partner specializing in building high-performance, low-overhead technological infrastructure for high-growth businesses. We build custom solutions that are simple, scalable, and efficient – ensuring your technology works today and grows with you tomorrow.</p>
-                <p>As a venture partner, we replace traditional development fees with long-term incentive alignment through equity or revenue-sharing, allowing partner companies to focus on the business while we manage the technical risk.</p>
-                <p class="capabilities">Cloud Architecture • Systems Integration • Digital Payments • AI Research • Customized Software</p>
+                <p>Parsimont is a technical venture partner specializing in building high-performance, low-overhead
+                    technological infrastructure for high-growth businesses. Building on more than 15 years of
+                    collective experience across deep tech, data science, and actuarial science, we build custom
+                    solutions that are simple, scalable, and efficient — ensuring your technology works today and
+                    grows with you tomorrow.</p>
+            </div>
+            <ul class="stats">
+                <li><span class="stat-num">15+</span><span class="stat-label">Years collective experience</span></li>
+                <li><span class="stat-num">5</span><span class="stat-label">Core capability domains</span></li>
+            </ul>
+        </section>
+
+        <section id="services" class="services reveal">
+            <span class="section-tag">02 / Services</span>
+            <h2>What we build</h2>
+            <div class="service-grid">
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">☁</div>
+                    <h3>Cloud Architecture</h3>
+                    <p>We build efficient cloud infrastructure that ensures your business operations remain secure,
+                        fast, and fully stable at any scale.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">⇄</div>
+                    <h3>Systems Integration</h3>
+                    <p>We bridge disconnected platforms by writing the custom middleware layer that allows your
+                        separate business systems to communicate, creating a single, automated operational engine.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">◈</div>
+                    <h3>Digital Payments</h3>
+                    <p>We build secure payment systems and ensure seamless integration with existing infrastructure.
+                    </p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">◎</div>
+                    <h3>AI Research</h3>
+                    <p>We engineer high-performance, proprietary machine learning models from the ground up —
+                        from autonomous systems and graph theory to computer vision models that outperform market
+                        standards.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">▣</div>
+                    <h3>Customized Software</h3>
+                    <p>When off-the-shelf software falls short, we engineer the precise internal tools, databases,
+                        and operational platforms required to drive your company forward.</p>
+                </article>
             </div>
         </section>
+
+        <section id="people" class="people reveal">
+            <span class="section-tag">03 / People</span>
+            <h2>More than a decade of combined experience</h2>
+            <div class="people-grid">
+                <article class="person-card">
+                    <h3>Sam</h3>
+                    <p class="person-role">Partnerships</p>
+                </article>
+                <article class="person-card">
+                    <h3>Will</h3>
+                    <p class="person-role">Technologies</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing reveal">
+            <span class="section-tag">04 / Pricing</span>
+            <h2>How we work with you</h2>
+            <div class="pricing-grid">
+                <article class="pricing-card">
+                    <h3>Milestone-Based</h3>
+                    <p>A straightforward fee structure priced entirely by deliverable milestones rather than
+                        hourly estimates. This guarantees predictable costs, zero hourly billing surprises, and
+                        transparency at every phase of the buildout.</p>
+                </article>
+                <article class="pricing-card">
+                    <h3>Equity / Revenue Share</h3>
+                    <p>We replace traditional development fees with long-term incentive alignment through equity
+                        or revenue-sharing, allowing partner companies to focus on the business while we manage
+                        the technical risk.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact reveal">
+            <h2>Built today. Engineered for tomorrow.</h2>
+        </section>
     </main>
-    <script src="script.js"></script>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Parsimont Pte Ltd. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 
 </html>
